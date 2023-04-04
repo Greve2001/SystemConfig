@@ -1,0 +1,35 @@
+format = """
+$username\
+$directory\
+$git_branch\
+$character
+"""
+
+[git_branch]
+format = "[$symbol $branch(:$remote_branch) ](bold purple)"
+symbol = ""
+
+[os.symbols]
+Arch = " "
+Linux = " "
+
+[directory]
+format = " $path "
+truncation_length = 3
+truncate_to_repo=false
+
+[character]
+success_symbol = "[❯](purple bold)"
+
+[hostname]
+ssh_only = false
+ssh_symbol = '🌐'
+format = "[$ssh_symbol$hostame](purple bold)"
+
+[username]
+style_root = 'bold red'
+style_user = 'bold purple'
+format = "[$user ](bold purple)"
+show_always = true
+
+
