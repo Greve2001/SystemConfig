@@ -17,14 +17,16 @@
         "tray",
         // "custom/language",
 	"backlight",
-        "pulseaudio",
-        "pulseaudio#microphone",
+	"pulseaudio",
+	"pulseaudio#microphone",
+        //"wireplumber",
 	"battery"
     ],
 
     "hyprland/window": {
         "format": "{}"
     },
+
     "wlr/workspaces": {
         "on-scroll-up": "hyprctl dispatch workspace e+1",
         "on-scroll-down": "hyprctl dispatch workspace e-1",
@@ -42,6 +44,7 @@
             "default": ""
         }
     },
+
     // "cpu": {
     //     "interval": 10,
     //     "format": " {}%",
@@ -59,16 +62,19 @@
     //     "interval": 3,
     //     "format": " {}",
     //     "tooltip": false
-    // }, 
+    // },
+
     "tray": {
         "icon-size": 13,
         "tooltip": false,
         "spacing": 10
     },
+
     "clock": {
         "format": "{: %R   %d/%m}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
+
     "backlight": {
 	"format": "{icon} {percent}%",
 	"device": "intel_backlight",
@@ -97,11 +103,13 @@
         "tooltip": false,
         "format-source": " {volume}%",
         "format-source-muted": " Muted",
-        "on-click": "pamixer --default-source -t",
-        "on-scroll-up": "pamixer --default-source -i 5",
-        "on-scroll-down": "pamixer --default-source -d 5",
-        "scroll-step": 5
     },
+    "wireplumber": {
+	"format": "{volume}% {icon}",
+	"format-muted": "",
+    	"format-icons": ["", "", ""]
+    },
+
     "battery": {
     	"bat": "BAT0",
     	"interval": 60,
@@ -112,6 +120,5 @@
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""],
         "max-length": 25
+    }
 }
-}
-
