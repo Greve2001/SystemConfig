@@ -1,4 +1,5 @@
-format = '''$username$directory$git_branch$cmd_duration$character'''
+format = '''$character$username$directory$git_branch$cmd_duration
+[❯](bold purple) '''
 
 [git_branch]
 format = "[$symbol $branch(:$remote_branch) ](bold purple)"
@@ -14,7 +15,8 @@ truncation_length = 3
 truncate_to_repo=false
 
 [character]
-success_symbol = "[❯](purple bold)"
+success_symbol = " "
+error_symbol = "[](red bold)"
 
 [hostname]
 ssh_only = false
