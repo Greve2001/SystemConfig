@@ -10,6 +10,11 @@
 window#waybar {
     background: rgba(21, 18, 27, 0);
     color: #cdd6f4;
+    padding:10px;
+    border: 1px solid rgba(255,255,255,0.2);
+    /*margin: 10px;*/ /*superseeded by config*/
+    background: #1e1e2e;
+    border-radius: 10px;
 }
 
 tooltip {
@@ -21,7 +26,6 @@ tooltip {
 }
 
 #workspaces button {
-    padding: 5px;
     color: #00ffff;
 }
 
@@ -41,11 +45,7 @@ tooltip {
 #workspaces,
 #tray,
 #backlight {
-    background: #1e1e2e;
-    padding: 0px 10px;
-    margin: 3px 0px;
-    margin-top: 10px;
-    border: 1px solid #181825;
+  margin: 5px 10px;
 }
 
 
@@ -56,52 +56,38 @@ tooltip {
 
 #clock {
     color: #fab387;
-    border-radius: 10px;
-    margin-left: 10px; /* To move away from edge of screen*/
 }
 
 #workspaces {
-    /*background: #1e1e2e;*/
-    border-radius: 10px;
-    margin-left: 10px;
-    padding-right: 5px;
-    padding-left: 5px;
+
 }
 
 #window {
-    border-radius: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
+
 }
 
 #tray {
-    border-radius: 10px;
-    margin-right: 10px;
+
 }
 
 #network {
-    color: #f9e2af;
-    border: 0px;
+
 }
 
 #backlight {
-    border-radius: 10px 0px 0px 10px
+
 }
 
 #pulseaudio {
     color: #89b4fa;
-    border: 0px;
 }
 
 #pulseaudio.microphone {
     color: #cba6f7;
-    border-radius: 0px;
 }
 
 #battery {
     color: #a6e3a1;
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px; /**/
 }
 
 
