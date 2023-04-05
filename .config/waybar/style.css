@@ -23,7 +23,6 @@ tooltip {
 #workspaces button {
     padding: 5px;
     color: #00ffff;
-    margin-right: 5px;
 }
 
 #workspaces button.active {
@@ -49,16 +48,23 @@ tooltip {
     border: 1px solid #181825;
 }
 
-#tray {
+
+
+/* --- PLACEMENT ORDER --- */
+
+/* Order of placement in bar. Left to right*/
+
+#clock {
+    color: #fab387;
     border-radius: 10px;
-    margin-right: 10px;
+    margin-left: 10px; /* To move away from edge of screen*/
 }
 
 #workspaces {
     /*background: #1e1e2e;*/
     border-radius: 10px;
     margin-left: 10px;
-    padding-right: 0px;
+    padding-right: 5px;
     padding-left: 5px;
 }
 
@@ -68,35 +74,34 @@ tooltip {
     margin-right: 60px;
 }
 
-#clock {
-    color: #fab387;
-    border-radius: 10px 0px 0px 10px;
-    margin-left: 5px;
-    border-right: 0px;
+#tray {
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
 #network {
     color: #f9e2af;
-    border-left: 0px;
-    border-right: 0px;
+    border: 0px;
+}
+
+#backlight {
+    border-radius: 10px 0px 0px 10px
 }
 
 #pulseaudio {
     color: #89b4fa;
-    border-left: 0px;
-    border-right: 0px;
+    border: 0px;
 }
 
 #pulseaudio.microphone {
     color: #cba6f7;
-    margin-right: 5px;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0px;
 }
 
 #battery {
     color: #a6e3a1;
-    border-radius: 0 10px 10px 0;
-    margin-right: 10px;
-    border-left: 0px;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px; /**/
 }
+
 
