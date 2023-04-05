@@ -1,9 +1,4 @@
-format = """
-$username\
-$directory\
-$git_branch\
-$character
-"""
+format = '''$username$directory$git_branch$cmd_duration$character'''
 
 [git_branch]
 format = "[$symbol $branch(:$remote_branch) ](bold purple)"
@@ -32,4 +27,7 @@ style_user = 'bold purple'
 format = "[$user ](bold purple)"
 show_always = true
 
-
+[cmd_duration]
+min_time = 1 
+format = '''[\[[神](fg:#eba0ac bold)$duration\] ](fg:#BBC3DF)'''
+disabled = false

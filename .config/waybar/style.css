@@ -22,12 +22,13 @@ tooltip {
 
 #workspaces button {
     padding: 5px;
-    color: #313244;
+    /*color: #313244;*/
+    color: #00ffff;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: #a6adc8;
+    color: #00ccff;
 }
 
 #workspaces button.focused {
@@ -48,10 +49,6 @@ tooltip {
     border-radius: 10px;
 }
 
-#custom-language,
-#custom-updates,
-#custom-caffeine,
-#custom-weather,
 #window,
 #clock,
 #battery,
@@ -93,13 +90,6 @@ tooltip {
     border-right: 0px;
 }
 
-#custom-updates {
-    color: #f5c2e7;
-    border-left: 0px;
-    border-right: 0px;
-    border-radius: 10px 0px 0px 10px;;
-}
-
 #window {
     border-radius: 10px;
     margin-left: 60px;
@@ -138,8 +128,3 @@ tooltip {
     border-left: 0px;
 }
 
-#custom-weather {
-    border-radius: 0px 10px 10px 0px;
-    border-right: 0px;
-    margin-left: 0px;
-}
