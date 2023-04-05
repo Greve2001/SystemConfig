@@ -1,0 +1,64 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",	
+    "exclusive": true,
+    "passtrough": false,
+    "gtk-layer-shell": true,
+    "height": 0,
+
+// Modules Start //
+    "modules-left": [
+        "clock",
+        // "cpu",
+        // "memory",
+        "wlr/workspaces"
+    ],
+    "modules-center": ["hyprland/window"],
+    "modules-right": [
+        "custom/pipewire",
+	"tray",
+    ],
+// Modules End //
+
+    "hyprland/window": {
+        "format": "{}"
+    },
+    "wlr/workspaces": {
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "all-outputs": true,
+        "on-click": "activate",
+        "format": "{icon}",
+	"format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+	    "6": "",
+            "urgent": "",
+            "default": ""
+        }
+    },
+    "tray": {
+        "icon-size": 13,
+        "tooltip": false,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{: %R   %d/%m}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "custom/pipewire": {
+    	"format": "{icon}",
+    	"return-type": "json",
+    	"signal": 8,
+    	"interval": "once",
+    	"format-icons": {
+            "mute": "",
+            "default": ["", "", "", ""],
+        },
+        "exec": "pw-volume status"
+    },
+}
