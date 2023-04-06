@@ -6,18 +6,16 @@
     "passtrough": false,
     "gtk-layer-shell": true,
     "height": 0,
-    "margin": 10,
+    "margin": 5,
     "modules-left": [
         "wlr/workspaces"
     ],
     "modules-center": ["clock"],
     "modules-right": [
         "tray",
-        // "custom/language",
         "backlight",
 	      "pulseaudio",
 	      "pulseaudio#microphone",
-        //"wireplumber",
 	      "battery"
     ],
 

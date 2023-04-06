@@ -10,7 +10,7 @@ Arch = " "
 Linux = " "
 
 [directory]
-format = " $path "
+format = "󰉋 $path "
 truncation_length = 3
 truncate_to_repo=false
 
