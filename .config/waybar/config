@@ -8,9 +8,10 @@
     "height": 0,
     "margin": 5,
     "modules-left": [
+        "clock",
         "wlr/workspaces"
     ],
-    "modules-center": ["clock"],
+    "modules-center": ["hyprland/window"],
     "modules-right": [
         "tray",
         "backlight",
