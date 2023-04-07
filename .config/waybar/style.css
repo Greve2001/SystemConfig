@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-    color: #89b4fa;
+    color: #fab387;
     padding: 10px;
     border: 1px solid rgba(255,255,255,0.2);
     /*margin: 10px;*/ /*superseeded by config*/
@@ -26,11 +26,11 @@ tooltip {
 }
 
 #workspaces button {
-    color: #89b4fa;
+    color: #fab387;
 }
 
 #workspaces button.active {
-    color: #5190f8;
+    color: #89b4fa;
 }
 
 #window,
