@@ -14,6 +14,7 @@
     "modules-center": ["hyprland/window"],
     "modules-right": [
         "tray",
+        "network",
         "backlight",
 	      "pulseaudio",
 	      "pulseaudio#microphone",
@@ -97,5 +98,18 @@
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""],
         "max-length": 25
-    }
+    },
+
+    "network": {
+        "interface": "wlp59s0",
+        "format": "{ifname}",
+        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-ethernet": "󰈁 {ipaddr}/{cidr}",
+        "format-disconnected": "", //An empty format will hide the module.
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    },
 }

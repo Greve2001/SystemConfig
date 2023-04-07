@@ -1,3 +1,4 @@
+
 * {
     border: none;
     border-radius: 0;
@@ -8,11 +9,11 @@
 }
 
 window#waybar {
-    color: #cdd6f4;
+    color: #89b4fa;
     padding: 10px;
     border: 1px solid rgba(255,255,255,0.2);
     /*margin: 10px;*/ /*superseeded by config*/
-    background: rgba(30,30,46, 1);
+    background: rgba(30, 30, 46, 1);
     border-radius: 10px;
 }
 
@@ -25,15 +26,11 @@ tooltip {
 }
 
 #workspaces button {
-    color: #00ffff;
+    color: #89b4fa;
 }
 
 #workspaces button.active {
-    color: #cba6f7;
-}
-
-#workspaces button.urgent {
-    color: #a6e3a1;
+    color: #5190f8;
 }
 
 #window,
@@ -46,47 +43,3 @@ tooltip {
 #backlight {
   margin: 5px 10px;
 }
-
-
-
-/* --- PLACEMENT ORDER --- */
-
-/* Order of placement in bar. Left to right*/
-
-#clock {
-    color: #fab387;
-}
-
-#workspaces {
-
-}
-
-#window {
-
-}
-
-#tray {
-
-}
-
-#network {
-
-}
-
-#backlight {
-
-}
-
-#pulseaudio {
-    color: #89b4fa;
-}
-
-#pulseaudio.microphone {
-    color: #cba6f7;
-}
-
-#battery {
-    color: #a6e3a1;
-}
-
-
