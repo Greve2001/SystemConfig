@@ -1,12 +1,11 @@
 {
     "layer": "top",
     "position": "top",
-    "mod": "dock",
     "exclusive": true,
     "passtrough": false,
     "gtk-layer-shell": true,
     "height": 0,
-    "margin": 5,
+    "margin": 0,
     "modules-left": [
         "clock",
         "wlr/workspaces"
@@ -42,7 +41,7 @@
     },
 
     "tray": {
-        "icon-size": 13,
+        "icon-size": 15,
         "tooltip": false,
         "spacing": 10
     },
