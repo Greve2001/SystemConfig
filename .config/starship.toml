@@ -1,8 +1,8 @@
 format = '''$character$username$directory$git_branch$cmd_duration
-[❯](bold purple) '''
+[❯](bold #89b4fa) '''
 
 [git_branch]
-format = "[$symbol $branch(:$remote_branch) ](bold purple)"
+format = "[$symbol $branch(:$remote_branch) ](bold #89b4fa)"
 symbol = ""
 
 [os.symbols]
@@ -21,12 +21,12 @@ error_symbol = "[](red bold)"
 [hostname]
 ssh_only = false
 ssh_symbol = '🌐'
-format = "[$ssh_symbol$hostame](purple bold)"
+format = "[$ssh_symbol$hostame](bold #89b4fa)"
 
 [username]
 style_root = 'bold red'
-style_user = 'bold purple'
-format = "[$user ](bold purple)"
+style_user = 'bold #89b4fa'
+format = "[$user ](bold #89b4fa)"
 show_always = true
 
 [cmd_duration]
