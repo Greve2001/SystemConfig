@@ -24,5 +24,6 @@ NVD_BACKEND=direct
 alias x="Hyprland"
 alias scrot=$HOME/Scripts/scrot.sh
 alias icat="kitty +kitten icat"
+alias ll='ls -la --color=auto'
 
 eval "$(starship init zsh)"
