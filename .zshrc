@@ -3,7 +3,9 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=10000
 unsetopt beep notify
+
 bindkey -v
+bindkey '^R' history-incremental-search-backward
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/frederik/.zshrc'
@@ -22,6 +24,7 @@ MOZ_DBUS_REMOTE=1
 NVD_BACKEND=direct
 
 alias x="Hyprland"
+alias y="startx /usr/bin/awesome"
 alias scrot=$HOME/Scripts/scrot.sh
 alias icat="kitty +kitten icat"
 alias clip="kitty +kitten clipboard"

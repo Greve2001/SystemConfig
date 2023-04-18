@@ -6,7 +6,7 @@ pathout=/tmp/tmpbgblur.png
 grim "$path"
 
 # Use gaussion blur
-ffmpeg -i "$path" -filter:v "gblur=sigma=15" -frames:v 1 "$pathout" > /dev/null 2>&1
+ffmpeg -i "$path" -filter:v "gblur=sigma=25" -frames:v 1 "$pathout" > /dev/null 2>&1
 
 # Lock the screen
 swaylock -c '1b2021' -i "$pathout"
